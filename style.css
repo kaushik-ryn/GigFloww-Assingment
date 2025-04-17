@@ -1,6 +1,4 @@
-
-  
-  input, select, button {
+input, select, button {
     margin: 10px 0;
     padding: 0.6em;
     font-size: 1em;
@@ -115,4 +113,56 @@ top:-270px;
 h2{
 visibility: hidden;
 }
+}
+
+#title {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.rocket {
+  position: relative;
+  animation: floatRocket 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+
+@keyframes floatRocket {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.rocket.takeoff {
+  animation: takeoff 1s ease forwards;
+}
+
+
+@keyframes takeoff {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px) scale(1.2);
+    opacity: 0;
+  }
 }

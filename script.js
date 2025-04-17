@@ -1,12 +1,23 @@
-// Wait for the DOM to load
+
 document.addEventListener("DOMContentLoaded", function () {
   const signupForm = document.getElementById("signupForm");
 
   signupForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // Prevents the form from actually submitting
+    e.preventDefault(); 
     alert("Thank You For signing up!");
     
-    // Optionally, you can reset the form
+
     signupForm.reset();
   });
+});
+window.addEventListener("load", () => {
+  const rocket = document.querySelector(".rocket");
+
+
+  setTimeout(() => {
+
+    setTimeout(() => {
+      rocket.classList.remove("takeoff");
+    }, 1000);
+  }, 1000);
 });
