@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   signupForm.addEventListener("submit", function (e) {
     e.preventDefault(); // Prevents the form from actually submitting
-    alert("Successfully signed up!");
+    alert("Thank You For signing up!");
     
     // Optionally, you can reset the form
     signupForm.reset();
