@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gig Worker Sign-Up</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+
+      <div class="box bx1">
+        <h1 id="title"> Become a Gig Pro!</h1>
+        <h2 style="font-family: Tahoma, Geneva, Verdana, sans-serif;"> <b style="font-size: 30px; font-style: italic;">Join our platform</b>, showcase your skills</h2>
+        <br>
+        <span>
+        <img id="socket" style="display: inline;" width="40px" src="img/socket.png" alt="">
+        <h2 style="display: inline; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" ><b style="font-size: 30px; ;" >Sign up</b> now to start your journey!</h2>
+        </span>
+        <br>
+        <br>
+        <div
+        style="display: flex;
+        justify-content: end;">
+        <img style="position: relative; " width="150px" src="img/rocket.svg" alt="">
+        </div>
+      </div>
+      <div class="box" id="bx2">
+        <h1 style="font-family:Tahoma, Geneva, Verdana, sans-serif; position: relative; top: 20px; color: black;">Sign Up</h1>
+        <form id="signupForm">
+          <input type="text" name="name" placeholder="Name" required/>
+          <input type="email" name="email" placeholder="Email" required/>
+          <label for="category" style="font-family:Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Skill Category</label>
+          <select style="font-family:Tahoma, Geneva, Verdana, sans-serif; font-size: medium;" id="category" name="category" required>
+            <option value="" >Select a category</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Content Writing">Content Writing</option>
+            <option value="Other">Other</option>
+          </select>
+    
+          <label for="portfolio" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px;">Portfolio Link</label>
+          <input type="url" id="portfolio" name="portfolio" required placeholder="https://example.com" />
+    
+          <button type="submit" id="submit" class="btn">Sign Up</button>
+        </form>
+      </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
